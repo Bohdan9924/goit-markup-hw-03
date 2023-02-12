@@ -18,11 +18,115 @@ body {
    line-height: 1.5;
 }
 
-ul {
-    list-style: none;
+/* Reset */
+ 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+   padding: 0;
 }
 
-/* Header */
+/* Components */
+
+.container {
+   width: 100%;
+   max-width: 1158px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.link {
+   text-decoration: none;
+   color: inherit;
+}
+
+.address {
+   font-style: normal;
+}
+
+button {
+   cursor: pointer;
+}
+
+.section {
+   padding: 120px 0;
+}
+
+/* Utils */
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* styles-header */
+
+.header {
+   border-bottom: 1px solid var(--footer-text-color);
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+   padding-right: 156px;
+   padding-left: 156px;
+}
+
+.site-nav {
+   display: flex;
+   align-items: center;
+}
+
+.nav-list {
+   display: flex;
+   gap: 40px; 
+}
+
+.nav-link {
+   color: var(--color-primary);
+   letter-spacing: 0.02em;
+   font-weight: 500;
+   line-height: 1.5;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--color-nav-hover);
+}
+
+.nav-link:active {
+   color: var(--color-nav-hover);
+}
 
  .logo {
    font-family: "Raleway";
@@ -33,57 +137,58 @@ ul {
    text-transform: uppercase;
    color: var(--color-logo-btn);
    text-decoration: none;
+   margin-right: 76px;
  }
 
- .logo-web {
+ .accent {
     color: var(--color-primary);
  }
 
- .site-nav .link {
-   color: var(--color-primary);
-   letter-spacing: 0.02em;
-   font-weight: 500;
-   line-height: 1.5;
-   text-decoration: none;
+ .address {
+   margin: auto;
  }
  
- 
- .site-nav .link:hover,
- .site-nav .link:focus{
-    color: var(--color-nav-hover);
+ .address-list {
+   display: flex;
+   gap: 40px;
  }
 
- .site-nav .link:active {
-    color: var(--color-nav-hover);
- }
- 
- .site-address .address-link {
+ .address-link {
    color: var(--color-secondary);
    text-decoration: none;
    font-style: normal;
    line-height: 1.5;
    letter-spacing: 0.02em;
+
+   display: flex;
+   padding-top: 24px;
+   padding-bottom: 24px;
  }
 
- .site-address .address-link:hover,
- .site-address .address-link:focus{
+ .address-link:hover,
+ .address-link:focus{
     color: var(--color-nav-hover);
  }
- .site-address .address-link:active {
+  .address-link:active {
     color: var(--color-nav-hover);
  }
  
+
  /*Hero*/
 
- .hero {
+ .hero-section {
    background-color: var(--color-primary);
+   padding-top: 188px;
+   padding-bottom: 188px;
+   text-align: center;
  }
 .hero-tittle{
    color:var(--background-color);
    font-size: 56px;
    line-height: 1.07;
-   text-align: center;
    letter-spacing: 0.02em;
+
+   margin-bottom: 48px;
 }
  
 .hero-button {
@@ -94,7 +199,9 @@ ul {
    line-height: 1.5;
    border: 1px solider var(--color-logo-btn);
    border-radius: 4px;
-   cursor: pointer;
+
+   padding: 16px 32px;
+   
 }
 
 .hero-button:hover,
@@ -103,9 +210,6 @@ ul {
 }
 
 /*Our advantages*/
-.hiden-tittle {
-   display: none;
-}
 
  .card-tittle {
    color: var(--color-primary);
