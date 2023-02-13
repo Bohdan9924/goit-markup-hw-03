@@ -188,7 +188,8 @@ button {
    line-height: 1.07;
    letter-spacing: 0.02em;
 
-   margin-bottom: 48px;
+   max-width: 496px;
+   margin: 0 auto 48px;
 }
  
 .hero-button {
@@ -211,12 +212,24 @@ button {
 
 /*Our advantages*/
 
- .card-tittle {
+.advantages-list {
+   display: flex;
+   gap: 24px;
+}
+
+.advantages-item {
+   flex-basis: calc((100% - 72px) / 4);
+}
+
+ .card-advantages {
    color: var(--color-primary);
    font-size: 20px;
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+
+   margin-bottom: 8px;
+
  }
 
  .sub-tittle{ 
@@ -224,30 +237,89 @@ button {
    letter-spacing: 0.02em;
    color: var(--color-secondary);
  }
+
 /*We are doing*/
 
-.section-tittle {
+.doing-tittle {
    font-size: 36px;
    line-height: 1.11;
-   text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   text-align: center;
+
+   margin-bottom: 72px;
 }
+
+.doing-list {
+   display: flex;
+   gap: 24px;
+   flex-wrap: wrap;
+}
+
+.doing-item {
+   border: 1px solid var(--footer-text-color);
+   flex-basis: calc((100% - 48px) / 3);
+}
+
 /*Team*/
 
-.light-back{
+.section-team {
    background-color: var(--light-color);
 }
 
-.card-team {
-   background-color: var(--background-color);
+.team-tittle {
+   font-size: 36px;
+   line-height: 1.11;   
+   text-align: center;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+
+   margin-bottom: 72px;
 }
+
+.team-list {
+   display: flex;
+   gap: 24px;
+   flex-wrap: wrap;
+}
+
+.team-item {
+   background-color: var(--background-color);
+   flex-basis: calc((100% - 72px) / 4);
+   text-align: center;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   border-radius: 0px 0px 4px 4px;
+}
+
+.card-tittle {
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--color-primary);
+}
+
+.team-job {
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--color-secondary);
+
+   margin-top: 8px;
+}
+
+.team-card {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+
 /*footer*/
-.footer{
+
+.footer {
+   padding-top: 100px;
+   padding-bottom: 100px;
    background-color: var(--color-primary);
 }
 
-.footer-logo {
+.logo-web {
    color: var(--light-color);
 }
 
@@ -255,9 +327,24 @@ button {
    color: var(--footer-text-color);
    line-height: 1.5;
    letter-spacing: 0.02em;
+
+   margin-top: 16px;
+   max-width: 264px;
 }
 
 /*Portfolio*/
+
+.portfolio {
+   padding-top: 96px;
+   padding-bottom: 120px;
+}
+
+.filter-list {
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+   padding-bottom: 72px;
+}
 
 .filter-button {
    font-weight: 500;
@@ -266,12 +353,31 @@ button {
    background-color: var(--light-color);
    border: 1px solid var(--footer-text-color);
    border-radius: 4px;
-   cursor: pointer;
+   font-family: inherit;
+
+   padding: 12px 24px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
    color: var(--background-color);
-   background-color: var(--color-logo-btn);
+   background-color: var(--color-nav-hover);
 }
 
+/* works */
+
+.work-list {
+   display: flex;
+   gap: 24px;
+   row-gap: 48px;
+   flex-wrap: wrap;
+}
+
+.work-item {
+   border: 1px solid var(--footer-text-color);
+   flex-basis: calc((100% - 48px) / 3);
+}
+
+.works-text {
+   padding: 32px 0 32px 16px;
+}
