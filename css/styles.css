@@ -35,7 +35,6 @@ p {
 /* Components */
 
 .container {
-   width: 100%;
    max-width: 1158px;
    margin: 0 auto;
    padding: 0 15px;
@@ -95,8 +94,6 @@ button {
 .header-container {
    display: flex;
    align-items: center;
-   padding-right: 156px;
-   padding-left: 156px;
 }
 
 .site-nav {
@@ -145,7 +142,7 @@ button {
  }
 
  .address {
-   margin: auto;
+   margin-left: auto;
  }
  
  .address-list {
@@ -212,6 +209,10 @@ button {
 
 /*Our advantages*/
 
+.advantages {
+   padding-bottom: 0;
+}
+
 .advantages-list {
    display: flex;
    gap: 24px;
@@ -236,6 +237,7 @@ button {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: var(--color-secondary);
+   margin-bottom: 0;
  }
 
 /*We are doing*/
@@ -293,9 +295,11 @@ button {
 
 .card-tittle {
    font-size: 20px;
+   font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--color-primary);
+   margin-bottom: 8px;
 }
 
 .team-job {
@@ -303,7 +307,8 @@ button {
    letter-spacing: 0.02em;
    color: var(--color-secondary);
 
-   margin-top: 8px;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 
 .team-card {
@@ -319,6 +324,17 @@ button {
    background-color: var(--color-primary);
 }
 
+.logo-footer {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.33;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--color-logo-btn);
+   text-decoration: none;
+}
+
 .logo-web {
    color: var(--light-color);
 }
@@ -330,6 +346,7 @@ button {
 
    margin-top: 16px;
    max-width: 264px;
+   margin-bottom: 0;
 }
 
 /*Portfolio*/
@@ -343,7 +360,7 @@ button {
    display: flex;
    gap: 24px;
    justify-content: center;
-   padding-bottom: 72px;
+   margin-bottom: 72px;
 }
 
 .filter-button {
